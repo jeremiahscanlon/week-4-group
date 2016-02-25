@@ -1,10 +1,9 @@
 $(document).ready(function(){
 
-var randomTweet="";
 var twits = {
   kayne: {
-    id: 'kanye',
-    handle: '@kanyewest',
+    id: 'kayne',
+    handle: '@kaynewest',
     tweets: [
       "I am your OG and I will be respected as such",
       "I know you mad every time you look at your child that this girl got you for 18 years",
@@ -37,23 +36,23 @@ var displayTweet=function(){
 	for(count in twits){
 		if(twits[count].id==randomTwit){
 			tweetArray=twits[count].tweets;}}
-	randomTweet=tweetArray[Math.floor(Math.random()*tweetArray.length)];
+	var randomTweet=tweetArray[Math.floor(Math.random()*tweetArray.length)];
 	$(".TweetDisplay").html(randomTweet);
 	container.id=randomTwit;}
 
 var guessTweet=function(guess){
 	if(container.id==guess){
-		$("."+guess+"RightOrWrong").prepend("<h2>YOU GOT IT!</h2>"+randomTweet);
+		$(".RightOrWrong").append("<h2>YOU GOT IT!</h2>");
 	}
 	else{
-		$("."+guess+"RightOrWrong").prepend("<h2>WRONG!</h2>"+randomTweet);
+		$(".RightOrWrong").append("<h2>WRONG!</h2>");
 	}
 	displayTweet();
 }
 
 displayTweet();
 $( ".Kanye" ).on( "click", function(){
-	guessTweet('kanye');})
+	guessTweet('kayne');})
 
 $(".Jayden").on("click", function(){
 	guessTweet('jayden');})
