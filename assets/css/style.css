@@ -44,6 +44,12 @@
 	margin-top: 7px;
 }
 
+.RightOrWrong {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height: 350px;
+}
+
 /* header */
 .navbar {
 	margin-bottom: 0px !important;
