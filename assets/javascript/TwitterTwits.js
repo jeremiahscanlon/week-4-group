@@ -42,10 +42,10 @@ var displayTweet=function(){
 
 var guessTweet=function(guess){
 	if(container.id==guess){
-		$(".RightOrWrong").append("YOU GOT IT!");
+		$(".RightOrWrong").append("<h2>YOU GOT IT!</h2>");
 	}
 	else{
-		$(".RightOrWrong").append("WRONG!");
+		$(".RightOrWrong").append("<h2>WRONG!</h2>");
 	}
 	displayTweet();
 }
