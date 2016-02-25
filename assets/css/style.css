@@ -30,6 +30,20 @@
 
 }
 
+.TweetDisplay {
+	background-color: white;
+	padding: 10px;
+	width: 100%;
+	color: black;
+	margin-top: 15px;
+	border-radius: 5px;
+	border: 1px solid #e1e8ed;
+}
+
+#tweet {
+	margin-top: 7px;
+}
+
 /* header */
 .navbar {
 	margin-bottom: 0px !important;
