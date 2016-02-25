@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>RPG</title>
+	<title>Twitter Twits</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
 	
 
 </head>
-<body class="forest">
+<body class="nyalley">
 	
 	<!-- Nav Bar -->
 	<nav class="navbar navbar-default" role="navigation">
@@ -39,8 +39,8 @@
 						<li class="dropdown">
 				          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Battle Location <span class="caret"></span></a>
 				          <ul class="dropdown-menu">
-				            <li><a href="#" id="forest">LA Street</a></li>
-				            <li><a href="#" id="snow">NY Alley</a></li>
+				            <li><a href="#" id="nyalley">LA Street</a></li>
+				            <li><a href="#" id="lastreet">NY Alley</a></li>
 				          </ul>
 				        </li>
 						<li><a href="#" id="startOver">Start Over</a></li>
@@ -55,8 +55,8 @@
 	
 		<!-- First Row - Main Header -->
 		<div class="row-fluid">
-			<div class="col-md-12 text-center" id="attackText">
-				<h2>Select Combatants</h2>
+			<div class="col-md-12 text-center TweetDisplay">
+				
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -75,10 +75,10 @@
 		<!-- Third Row - Attack Area -->
 		<div class="row-fluid">
 			<div class="col-md-6 col-sm-6 col-xs-6 attackPlayer Kanye">
-				<img src="assets/images/kanye.png" alt="Placeholder">
+				<img src="assets/images/kanye.jpg" alt="Placeholder">
 			</div>
 			<div class="col-md-6 col-sm-6 col-xs-6 attackPlayer Jaden">
-				<img src="assets/images/jaden.png" alt="Placeholder">
+				<img src="assets/images/jaden.jpg" alt="Placeholder">
 			</div>
 		</div>
 		<div class="clearfix"></div>
@@ -94,13 +94,14 @@
 		<!-- Fifth Row - Fighter start images -->
 		<div class="row-fluid">
 			<div class="col-md-12 col-sm-12 col-xs-12 holder">
-
+				<div class="col-md-12 col-sm-12 col-xs-12 RightOrWrong"></div>
 			</div>			
 		</div>
 		<div class="clearfix"></div>
 
 	</div>
 	</div>
-	<script type="text/javascript" src="assets/js/game.js"></script>
+	<script type="text/javascript" src="assets/js/TwitterTwits.js"></script>
+	<script type="text/javascript" src="assets/js/Other.js"></script>
 </body>
 </html>
