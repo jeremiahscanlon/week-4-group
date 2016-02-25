@@ -46,7 +46,7 @@ var guessTweet=function(guess){
 		$("."+guess+"RightOrWrong").prepend("<h2>YOU GOT IT!</h2>"+randomTweet);
 	}
 	else{
-		$("."+guess+"RightOrWrong").prepend("<h2>WRONG!</h2>"+randomTweet);
+		$("."+container.id+"RightOrWrong").prepend("<h2>WRONG!</h2>"+randomTweet);
 	}
 	displayTweet();
 }
